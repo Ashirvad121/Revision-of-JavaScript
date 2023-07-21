@@ -1,0 +1,26 @@
+*{
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 5px;
+    background-color: azure;
+    border: 1px solid beige;
+}
+button{
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    background-color: antiquewhite;
+    margin-left: 15px;
+}
+button:hover{
+    cursor: pointer;
+}
+input{
+    padding: 5px 10px 5px 10px;
+    background-color: antiquewhite;
+}
