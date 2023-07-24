@@ -3,19 +3,63 @@
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-ul{
-    list-style: none;
+#taskInput {
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
+#taskList {
+    padding: 0;
+    margin: 20px 0;  
+    width: auto;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#taskList li button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#taskList li button:hover {
+    background-color: #c82333;
+} 
+
 li{
     padding: 5px;
     background-color: azure;
     border: 1px solid beige;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 button{
+    font-size: 16px;
     width: auto;
-    padding: 5px 10px 5px 10px;
+    padding: 10px;
     background-color: #FAF0D7;
-    margin-left: 15px;
+    margin: 1rem;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: 0px;
 }
 button:hover{
     cursor: pointer;
@@ -23,4 +67,51 @@ button:hover{
 input{
     padding: 5px 10px 5px 10px;
     background-color: #FAF0D7;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    #taskInput {
+        width: 40%;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    button{
+        margin: 2rem;
+        color: #ffffff;
+        background-color: #007bff;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 0px;
+    }
+
+    #taskList{
+        width: 80%;
+        margin: auto;
+        /* margin-top: 3rem; */
+    }
+
+    #taskList li {
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    #taskList li button {
+        background-color: #007bff;
+        font-size: 18px;
+        padding: 6px 12px;
+        border-radius: 10px;
+    }
 }
